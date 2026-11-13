@@ -1,0 +1,143 @@
+/* Colour variables */
+:root {
+    --primary-colour: #123456;
+    --secondary-colour: #f39c12;
+    --third-colour: #2980b9;
+    --white: #ffffff;
+    --light-grey: #f2f2f2;
+    --dark: #222222;
+}
+
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-grey);
+    color: var(--dark);
+}
+
+/* Navigation bar */
+#navbar {
+    background-color: var(--primary-colour);
+    color: var(--white);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar a {
+    color: var(--white);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#navbar a:hover {
+    color: var(--secondary-colour);
+}
+
+/* Main page layout */
+.container {
+    display: flex;
+    gap: 25px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+/* Sidebar */
+#sidebar {
+    width: 25%;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar li {
+    margin: 15px 0;
+}
+
+#sidebar a {
+    text-decoration: none;
+    color: var(--primary-colour);
+}
+
+/* Main content */
+#main-content {
+    width: 70%;
+}
+
+.section {
+    background-color: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.section h2 {
+    color: var(--primary-colour);
+}
+
+/* Service cards */
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card {
+    background-color: var(--third-colour);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 8px;
+    flex: 1 1 40%;
+}
+
+/* Contact links */
+#contact a {
+    color: var(--third-colour);
+}
+
+/* Footer */
+#footer {
+    background-color: var(--primary-colour);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Responsive design */
+@media screen and (max-width: 767px) {
+
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    #sidebar,
+    #main-content {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar ul {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+}
