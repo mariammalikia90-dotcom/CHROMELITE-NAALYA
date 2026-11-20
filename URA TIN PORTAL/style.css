@@ -1,0 +1,179 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* HEADER */
+.header {
+    background-color: #003366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* URA LOGO */
+.header img {
+    height: 100px;
+    width: auto;
+}
+
+/* HEADER HEADING */
+.header h1 {
+    font-size: 30px;
+}
+
+/* INFORMATION BAR */
+.info-bar {
+    background-color: #FFB81C;
+    color: #003366;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+}
+
+/* MAIN CONTAINER */
+.container {
+    width: 80%;
+    max-width: 850px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* MAIN HEADING */
+.container h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 25px;
+}
+
+/* TAXPAYER TOGGLE BUTTONS */
+.taxpayer-type {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+/* HIDE ORIGINAL RADIO BUTTONS */
+.taxpayer-type input {
+    display: none;
+}
+
+/* TOGGLE LABELS */
+.taxpayer-type label {
+    background-color: #eeeeee;
+    color: #003366;
+    padding: 15px 25px;
+    border: 2px solid #003366;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* SELECTED TOGGLE */
+.taxpayer-type input:checked + label {
+    background-color: #003366;
+    color: white;
+}
+
+/* FIELDSET */
+fieldset {
+    border: 2px solid #003366;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* LEGEND */
+legend {
+    color: #003366;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* FORM LABELS */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* INPUT FIELDS */
+form input[type="text"],
+form input[type="date"],
+form input[type="tel"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* GENDER SECTION */
+.gender {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.gender label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.gender input {
+    margin-left: 10px;
+}
+
+/* FILE UPLOAD */
+form input[type="file"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* NEXT BUTTON */
+button {
+    background-color: #003366;
+    color: white;
+    padding: 13px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* BUTTON HOVER */
+button:hover {
+    background-color: #FFB81C;
+    color: #003366;
+}
+
+/* FOOTER */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}

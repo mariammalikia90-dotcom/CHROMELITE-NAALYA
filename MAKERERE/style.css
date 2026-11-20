@@ -1,0 +1,101 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #800000;
+    color: white;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 20px;
+}
+
+/* METADATA BAR */
+.metadata {
+    background-color: #EEEEEE;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* TABLE HEADINGS */
+thead th {
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+/* TABLE DATA */
+td {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    text-align: center;
+}
+
+/* STUDENT NAME */
+td:nth-child(2) {
+    text-align: left;
+}
+
+/* ALTERNATING ROW COLOURS */
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #FFF8F4;
+}
+
+/* HOVER EFFECT */
+tbody tr:hover {
+    background-color: #EEEEEE;
+}
+
+/* TABLE FOOTER */
+tfoot th {
+    background-color: #800000;
+    color: white;
+    padding: 15px;
+    border: 1px solid #cccccc;
+}
+
+/* PAGE FOOTER */
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}

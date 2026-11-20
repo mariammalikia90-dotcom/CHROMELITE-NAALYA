@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>URA TIN Registration Portal</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="portal.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <img src="images4.jpgwidth="300" style="display: block; margin: 0 auto;">" alt="">
+
+        <h1>TIN Registration Portal</h1>
+
+    </header>
+
+    <!-- INFORMATION BAR -->
+    <div class="info-bar">
+
+        <p>Have your National ID ready before starting.</p>
+
+    </div>
+
+    <!-- MAIN FORM AREA -->
+    <main class="container">
+
+        <h2>Taxpayer Registration</h2>
+
+        <!-- TAXPAYER TYPE -->
+        <div class="taxpayer-type">
+
+            <input type="radio" id="individual" name="taxpayer" value="individual" checked>
+
+            <label for="individual">Individual Taxpayer</label>
+
+            <input type="radio" id="business" name="taxpayer" value="business">
+
+            <label for="business">Business Entity</label>
+
+        </div>
+
+        <!-- SECTION A FORM -->
+        <form>
+
+            <fieldset>
+
+                <legend>Section A: Individual Taxpayer Details</legend>
+
+                <!-- FULL NAME -->
+                <label for="fullname">Full Name:</label>
+
+                <input type="text" id="fullname" name="fullname" required>
+
+                <!-- NIN -->
+                <label for="nin">NIN:</label>
+
+                <input type="text"
+                       id="nin"
+                       name="nin"
+                       maxlength="14"
+                       pattern="[A-Z]{2}[A-Z0-9]{12}"
+                       title="Enter two capital letters followed by 12 letters or digits"
+                       required>
+
+                <!-- DATE OF BIRTH -->
+                <label for="dob">Date of Birth:</label>
+
+                <input type="date" id="dob" name="dob">
+
+                <!-- GENDER -->
+                <label>Gender:</label>
+
+                <div class="gender">
+
+                    <input type="radio" id="male" name="gender" value="Male">
+
+                    <label for="male">Male</label>
+
+                    <input type="radio" id="female" name="gender" value="Female">
+
+                    <label for="female">Female</label>
+
+                </div>
+
+                <!-- DISTRICT -->
+                <label for="district">District:</label>
+
+                <select id="district" name="district">
+
+                    <option value="">Select District</option>
+
+                    <option value="Kampala">Kampala</option>
+
+                    <option value="Wakiso">Wakiso</option>
+
+                    <option value="Mukono">Mukono</option>
+
+                    <option value="Gulu">Gulu</option>
+
+                    <option value="Mbarara">Mbarara</option>
+
+                </select>
+
+                <!-- PHONE -->
+                <label for="phone">Phone:</label>
+
+                <input type="tel" id="phone" name="phone" required>
+
+                <!-- EMAIL -->
+                <label for="email">Email:</label>
+
+                <input type="email" id="email" name="email">
+
+                <!-- NATIONAL ID UPLOAD -->
+                <label for="nationalid">Upload National ID:</label>
+
+                <input type="file"
+                       id="nationalid"
+                       name="nationalid"
+                       accept=".jpg,.pdf">
+
+                <!-- NEXT BUTTON -->
+                <button type="submit">Next</button>
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>© 2026 Uganda Revenue Authority (URA)</p>
+
+    </footer>
+
+</body>
+
+</html>
