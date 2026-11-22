@@ -1,0 +1,248 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFF0;
+    color: #333333;
+}
+
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #800020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* HOTEL LOGO */
+.navbar img {
+    height: 50px;
+    width: auto;
+}
+
+
+/* NAVIGATION LINKS */
+.navbar a {
+    color: #FFFFF0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.navbar a:hover {
+    color: #C9A84C;
+}
+
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+}
+
+.hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* HERO TEXT OVERLAY */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    width: 80%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+
+/* BOOK NOW BUTTON */
+.book-btn {
+    display: inline-block;
+    background-color: #C9A84C;
+    color: #800020;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.book-btn:hover {
+    background-color: #800020;
+    color: white;
+}
+
+
+/* ROOMS SECTION */
+.rooms {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.rooms h2 {
+    color: #800020;
+    margin-bottom: 30px;
+}
+
+
+/* ROOM CONTAINER */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+
+/* ROOM CARDS */
+.room-card {
+    background-color: white;
+    border: 2px solid #C9A84C;
+    padding: 30px;
+    width: calc(50% - 13px);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.room-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+.room-card h4 {
+    color: #C9A84C;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.room-card p {
+    line-height: 1.6;
+}
+
+
+/* COMPARISON SECTION */
+.comparison {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+.comparison h2 {
+    color: #800020;
+    margin-bottom: 25px;
+}
+
+
+/* COMPARISON TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #800020;
+    color: white;
+    padding: 15px;
+    border: 1px solid #C9A84C;
+}
+
+td {
+    padding: 15px;
+    border: 1px solid #C9A84C;
+    text-align: center;
+}
+
+
+/* ALTERNATE ROW COLOURS */
+tr:nth-child(even) {
+    background-color: #FFFFF0;
+}
+
+
+/* CHECK SYMBOL */
+.yes {
+    color: green;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* CROSS SYMBOL */
+.no {
+    color: red;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+/* BOOKING SECTION */
+.booking {
+    background-color: #FFFFF0;
+    padding: 40px;
+    text-align: center;
+}
+
+.booking h2 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .room-card {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 25px;
+    }
+
+    .comparison {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+}
