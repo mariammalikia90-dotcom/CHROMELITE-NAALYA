@@ -1,0 +1,245 @@
+/* GENERAL STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: #002147;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    background-color: #002147;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+}
+
+nav a:hover {
+    color: #D4AF37;
+}
+
+
+/* SURVEY BANNER */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.banner-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 33, 71, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title h2 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+/* PROGRESS INDICATOR */
+
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 25px;
+    gap: 80px;
+}
+
+.step {
+    text-align: center;
+    color: #555;
+}
+
+.step span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+    color: white;
+    font-weight: bold;
+}
+
+.step.active span {
+    background-color: #D4AF37;
+    color: #002147;
+}
+
+.step.active p {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+
+/* MAIN CONTENT */
+
+main {
+    width: 75%;
+    margin: 30px auto;
+}
+
+
+/* FIELDSET */
+
+fieldset {
+    border: 2px solid #002147;
+    border-radius: 8px;
+    padding: 25px;
+    background-color: white;
+}
+
+legend {
+    background-color: #002147;
+    color: white;
+    padding: 12px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* FORM GROUPS */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #002147;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+/* RADIO BUTTONS */
+
+.radio-group {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.radio-group label {
+    color: #333;
+}
+
+
+/* BUTTON */
+
+button {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #D4AF37;
+    color: #002147;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #002147;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .progress {
+        gap: 15px;
+    }
+
+    .radio-group {
+        flex-direction: column;
+    }
+
+    .banner-title h2 {
+        font-size: 22px;
+    }
+
+}
